@@ -2,8 +2,8 @@
 const express = require('express');
 const cors = require('cors');
 
-const app = expess();
-const PORT = 300;
+const app = express();
+const PORT = 3000;
 
 //Permite que o frontend, que roda em outra porta,
 //faça requisições para este backend.
