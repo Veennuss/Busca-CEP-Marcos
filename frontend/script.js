@@ -84,7 +84,7 @@ formCep.addEventListener('submit', async (evento) => {
     mensagem.innerText = 'Consultado a API ViaCEP...';
 
     // O FRONTEND chama apenas o nosso BACKEND
-    const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    const resposta = await fetch(`${API}/api/ceps/${cep}`);
 
     // Converte a resposta do backend em JSON
     const dados = await resposta.json();
