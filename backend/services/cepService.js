@@ -23,8 +23,15 @@ const proxyAgente = USAR_PROXY
 
 async function consultarViaCep(cep) {
 
+    const opcoes = {};
+
+    if (proxyAgente) {
+        opcoes.dispatcher = proxyAgente;
+    }
+
+
     const resposta = await fetch(
-        `https://viacep.com.br/ws/${cep}/json/`
+        `https://viacep.com.br/ws/${cep}/json/`, opcoes
     );
 
 
