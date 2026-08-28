@@ -122,6 +122,5 @@ formCep.addEventListener('submit', async (evento) => {
 
     botaoBuscar.disabled = false;
     botaoBuscar.innerText = 'Buscar';
-
   }
 });
