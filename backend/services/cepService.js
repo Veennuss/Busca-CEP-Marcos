@@ -1,3 +1,19 @@
+const {fetch, ProxyAgent}  = require('undici');
+
+
+
+//Configuração de Proxy
+
+
+const USAR_PROXY = true;
+
+const proxyAgente = USAR_PROXY
+? new ProxyAgent('http://172.16.0.253:3128')
+: undefined;
+
+
+
+
 
 //Service de CEP
 
